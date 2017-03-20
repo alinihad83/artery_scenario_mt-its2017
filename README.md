@@ -13,3 +13,5 @@ Details of this scenario and accompanying storyboard extensions are given in
 by *Christina Obermaier, Raphael Riebl, Christian Facchi*
 to be presented at *5th International Conference on Models and Technologies for Intelligent Transportation Systems [(MT-ITS 2017)](http://www.mt-its2017.org)*.
 
+The SUMO map has been generated using [OpenStreetMap](http://www.openstreetmap.org/copyright) data.
+It represents the area near motorway junction ["Ingolstadt Nord"](http://www.openstreetmap.org/#map=15/48.7716/11.4378) in Ingolstadt, Germany.
