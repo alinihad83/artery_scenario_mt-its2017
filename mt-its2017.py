@@ -1,5 +1,6 @@
 import storyboard
 import timeline
+from storyboard import Coord
 
 
 def createStories():
@@ -22,5 +23,17 @@ def createStories():
         # Register Stories at the Storyboard
         board.registerStory(story)
         board.registerStory(stopStory)
+
+        jamAreaCondition = storyboard.PolygonCondition([Coord(2920, 2673),
+                                                        Coord(2903, 2955),
+                                                        Coord(2882, 3154),
+                                                        Coord(2901, 3154),
+                                                        Coord(2923, 2955),
+                                                        Coord(2943, 2673)])
+        jamTimeCondition = storyboard.TimeCondition(timeline.seconds(60))
+        jamTimeAndSpaceConditions = storyboard.AndCondition(jamTimeCondition, jamAreaCondition)
+        jamConditions = storyboard.AndCondition(jamTimeAndSpaceConditions, storyboard.LimitCondition(10))
+        jamStory = storyboard.Story(jamConditions, [stopEffect])
+        board.registerStory(jamStory)
 
         print("Stories loaded!")
