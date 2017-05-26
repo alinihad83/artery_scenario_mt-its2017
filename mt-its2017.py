@@ -12,7 +12,7 @@ def createStories():
         story = storyboard.Story(speedAndTTC, [ttcSignalEffect])
 
         # Vehicle stops at second 20
-        timeToStop = storyboard.TimeCondition(timeline.seconds(20))
+        timeToStop = storyboard.TimeCondition(timeline.seconds(40.5))
         vehicleToStop = storyboard.CarSetCondition("flow1.0")
         vehicleAndTimeToStop = storyboard.AndCondition(timeToStop, vehicleToStop)
         stopEffect = storyboard.StopEffect()
