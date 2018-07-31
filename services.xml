@@ -3,7 +3,7 @@
 	<service type="artery.application.CaService" name="CA">
 		<listener port="2001" />
 	</service>
-	<service type="artery.application.DenmService" name="DEN">
+	<service type="artery.application.DenService" name="DEN">
 		<listener port="2002" />
 	</service>
 </services>
