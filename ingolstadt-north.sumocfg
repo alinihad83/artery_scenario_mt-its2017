@@ -3,7 +3,7 @@
     <input>
         <net-file value="ingolstadt-north.net.xml" />
         <route-files value="ingolstadt-north.rou.xml" />
-        <additional-files value="ingolstadt-north.poly.xml private.vtype.xml"/>
+        <additional-files value="ingolstadt-north.poly.xml,private.vtype.xml" />
     </input>
 
     <processing>
