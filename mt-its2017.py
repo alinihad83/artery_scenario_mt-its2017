@@ -3,7 +3,7 @@ import timeline
 from storyboard import Coord
 
 
-def createStories():
+def createStories(board):
         # Create TtcCondition
         ttcCondition = storyboard.TtcCondition(1.5, 200)  # ttc 1.5sec | radius 200m
         speedConditonGreater = storyboard.SpeedDifferenceConditionFaster(5.55556)  # 20 km/h
